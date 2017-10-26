@@ -17,8 +17,8 @@
 	
 	<div class="fullscreen">
 
-		<video autoplay loop class="fullscreen-bg__video" id="volumedown" poster="loading.png">
-			<source src="http://hnng.moe/f/Vij" type="video/mp4">
+		<video autoplay loop muted class="fullscreen-bg__video" id="volumedown" poster="loading.png">
+			<source src="http://hnng.moe/f/VmM" type="video/mp4">
 			"It's 2017 what are you doing"
 		</video>
 
@@ -66,21 +66,25 @@
 		<br/>
 
 		<p id="datetime"></p>
+
+		<audio autoplay loop>
+			<source src="http://hnng.moe/f/VmL" type="audio/mpeg">
+		</audio>
 		
 		<script>
 		
-		var dt = new Date();
-		document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" | "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-		
-		document.getElementById("volumedown").volume = 0.2;
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" | "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+			
+			document.getElementById("volumedown").volume = 0.2;
 
-		function muteBg() {
-		    document.getElementById("volumedown").volume = 0;
-		}
+			function muteBg() {
+				document.getElementById("volumedown").volume = 0;
+			}
 
-		function unmuteBg() {
-		    document.getElementById("volumedown").volume = 0.2;
-		}
+			function unmuteBg() {
+				document.getElementById("volumedown").volume = 0.2;
+			}
 
 		</script>
 		

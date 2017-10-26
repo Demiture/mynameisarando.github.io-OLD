@@ -62,7 +62,7 @@ video {
 	margin: 0 0 75px 0;
 	position: absolute;
 	left: 44.8%;
-	top: 16%;
+	top: 14%;
 }
 #datetime {
 	font-size: 14px;
@@ -127,12 +127,12 @@ video {
 }
 @media screen and (max-height: 720px) {
 	#avi {
-		top: 12%
+		top: 10%
 	}
 }
 @media screen and (max-height: 600px) {
 	#avi {
-		top: 9%
+		top: 8%
 	}
 }
 @media screen and (max-height: 500px) {

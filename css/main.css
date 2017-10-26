@@ -23,6 +23,9 @@ p {
 	color: white;
 	text-align: center;
 }
+video {
+	opacity: 0.4;
+}
 .fullscreen {
     position: fixed;
     top: 0;

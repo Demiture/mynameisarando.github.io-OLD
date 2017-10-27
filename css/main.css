@@ -141,6 +141,39 @@ video {
 	}
 }
 
+/* Animations */
+
+#fade {
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
+	-moz-animation: fadein 4s; /* Firefox */
+	-ms-animation: fadein 4s; /* Internet Explorer */
+	-o-animation: fadein 4s; /* Opera */
+	animation: fadein 4s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
 /*Fix for video on different width screens (Only works if Aspect Ratio is kept at 16:9/4:3*/
 @media screen and (max-width: 1354px) {
 	.fullscreen-bg__video {

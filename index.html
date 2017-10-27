@@ -74,11 +74,11 @@
 
 		<audio autoplay loop id="volumedown">
 
-			<source src="http://hnng.moe/f/VoT" type="audio/mpeg">
+			<source src="http://hnng.moe/f/VmO" type="audio/mpeg">
 
 		</audio>
 
-		<!-- http://hnng.moe/f/VmO -->
+		<!--  -->
 		
 		<script>
 			
@@ -103,14 +103,14 @@
 			var dt = new Date();
 			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
 			
-			document.getElementById("volumedown").volume = 0.3;
+			document.getElementById("volumedown").volume = 0.15;
 
 			function muteBg() {
 				document.getElementById("volumedown").volume = 0;
 			}
 
 			function unmuteBg() {
-				document.getElementById("volumedown").volume = 0.3;
+				document.getElementById("volumedown").volume = 0.15;
 			}
 
 		</script>

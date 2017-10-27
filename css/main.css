@@ -113,13 +113,16 @@ video {
 	#avi {
 		left: 39.8%;
 	}
+	#name2 {
+		font-size: 32px;
+	}
 }
 @media screen and (max-width: 500px) {
 	#avi {
 		left: 32.8%;
 	}
 	#name2 {
-		font-size: 32px;
+		font-size: 26px;
 	}
 	.hello {
 		font-size: 9px;

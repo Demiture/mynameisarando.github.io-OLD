@@ -116,6 +116,14 @@ video {
 	#name2 {
 		font-size: 32px;
 	}
+	.shill {
+		width: 30px;
+		height: 30px;
+	}
+	.hello {
+		letter-spacing: 5px;
+		margin: 0;
+	}
 }
 @media screen and (max-width: 500px) {
 	#avi {
@@ -123,6 +131,18 @@ video {
 	}
 	#name2 {
 		font-size: 26px;
+	}
+	.hello {
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 200px) {
+	#avi {
+		left: 32.8%;
+	}
+	#name2 {
+		font-size: 18px;
+		letter-spacing: 2px;
 	}
 	.hello {
 		font-size: 9px;

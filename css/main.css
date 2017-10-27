@@ -142,7 +142,6 @@ video {
 }
 
 /* Animations */
-
 #fade {
 	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
 	-moz-animation: fadein 4s; /* Firefox */

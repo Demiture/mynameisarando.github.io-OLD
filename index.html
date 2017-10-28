@@ -82,7 +82,7 @@
 		
 		<script>
 			
-			// big shoutout to zwei //
+			// Time | big shoutout to zwei //
 			function updateTime(){
     		var currentTime = new Date()
 			var hours = currentTime.getHours()
@@ -104,9 +104,11 @@
 			}
 			setInterval(updateTime, 1000);
 			
+			// Date //
 			var dt = new Date();
 			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
 			
+			// Audio Volume //
 			document.getElementById("volumedown").volume = 0.15;
 
 			function muteBg() {

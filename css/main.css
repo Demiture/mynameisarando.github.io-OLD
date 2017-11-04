@@ -127,7 +127,7 @@ video {
 }
 @media screen and (max-width: 500px) {
 	#avi {
-		left: 32.8%;
+		left: 34.5%;
 		top: 10%;
 	}
 	#name2 {
@@ -153,6 +153,7 @@ video {
 	#avi {
 		top: 10%;
 		width: 125px;
+		height: 125px;
 	}
 	#name {
 		left: 0.5%;

@@ -150,17 +150,28 @@ video {
 }
 @media screen and (max-height: 720px) {
 	#avi {
-		top: 10%
+		top: 10%;
+		width: 125px;
+		left: 34.8%;
+	}
+	#name {
+		left: 0.5%;
+	}
+	#name2 {
+		font-size: 20px;
+	}
+	#contact {
+		font-size: 8px;
 	}
 }
 @media screen and (max-height: 600px) {
 	#avi {
-		top: 8%
+		top: 8%;
 	}
 }
 @media screen and (max-height: 500px) {
 	#avi {
-		top: 1%
+		top: 1%;
 	}
 }
 

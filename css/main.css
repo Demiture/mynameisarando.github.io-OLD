@@ -154,24 +154,6 @@ video {
 		top: 10%;
 		width: 125px;
 		height: 125px;
-		left: 45%;
-	}
-	#name {
-		left: 0.5%;
-	}
-	#name2 {
-		font-size: 20px;
-	}
-	#contact {
-		font-size: 8px;
-	}
-}
-@media screen and (max-height: 680px) {
-	#avi {
-		top: 10%;
-		width: 125px;
-		height: 125px;
-		left: 43.8%;
 	}
 	#name {
 		left: 0.5%;

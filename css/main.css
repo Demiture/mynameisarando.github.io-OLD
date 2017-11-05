@@ -166,6 +166,23 @@ video {
 		font-size: 8px;
 	}
 }
+@media screen and (max-height: 720px) {
+	#avi {
+		top: 10%;
+		width: 125px;
+		height: 125px;
+		left: 43.8%;
+	}
+	#name {
+		left: 0.5%;
+	}
+	#name2 {
+		font-size: 20px;
+	}
+	#contact {
+		font-size: 8px;
+	}
+}
 @media screen and (max-height: 600px) {
 	#avi {
 		top: 8%;

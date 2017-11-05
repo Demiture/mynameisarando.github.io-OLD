@@ -166,7 +166,7 @@ video {
 		font-size: 8px;
 	}
 }
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 680px) {
 	#avi {
 		top: 10%;
 		width: 125px;

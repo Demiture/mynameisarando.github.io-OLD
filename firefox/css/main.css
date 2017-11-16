@@ -29,73 +29,12 @@ video {
 }
 
 /* Classes */
-.fullscreen {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.hello {
-	letter-spacing: 5px;
-	margin: 0 25px 0 0;
-}
-.shill {
-	width: 40px;
-	height: 40px;
-}
+
 
 /* ID's */
-#avi {
-	width: 150px;
-	border: 1px solid white;
-	border-radius: 50%;	
-	z-index: 1;
-	margin: 0 0 75px 0;
-	position: absolute;
-	left: 45%;
-	top: 14%;
-}
-#datetime {
-	font-size: 14px;
-}
-#fix {
-	margin-right: 35px;
-}
-#line {
-	padding: 100px 0 0 0;
-	border: 1px solid white;
-	max-width: 1px;
-	top: 93%;
-	left: 50%;
-	margin: auto;
-}
-#name {
-	position: absolute;
-	top: 35%;
-	left: -1%;
-	font-size: 50px;
-	letter-spacing: 10px;
-	text-align: center;
-	width: 100%;
-	text-shadow: 2px 2px 4px #000000
-}
-#name2 {
-	top: 26%;
-	left: -1%;
-	font-size: 50px;
-	letter-spacing: 10px;
-	text-align: center;
-	width: 100%;
-	text-shadow: 2px 2px 4px #000000
+
+#centerimage {
+	
 }
 
 /*Mobile Machine*/

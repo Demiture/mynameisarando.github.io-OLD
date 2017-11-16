@@ -1,0 +1,287 @@
+a:focus, a:hover {
+	color: transparent;
+}
+a {
+	text-decoration: none;
+	color: transparent;
+	text-shadow: 2px 2px 4px transparent;
+}
+body {
+	margin: 0px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	background-color: black;
+}
+button {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	
+}
+hr {
+	margin: 0 25%;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}
+video {
+	opacity: 0.4;
+}
+
+/* Classes */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.hello {
+	letter-spacing: 5px;
+	margin: 0 25px 0 0;
+}
+.shill {
+	width: 40px;
+	height: 40px;
+}
+
+/* ID's */
+#avi {
+	width: 150px;
+	border: 1px solid white;
+	border-radius: 50%;	
+	z-index: 1;
+	margin: 0 0 75px 0;
+	position: absolute;
+	left: 45%;
+	top: 14%;
+}
+#datetime {
+	font-size: 14px;
+}
+#fix {
+	margin-right: 35px;
+}
+#line {
+	padding: 100px 0 0 0;
+	border: 1px solid white;
+	max-width: 1px;
+	top: 93%;
+	left: 50%;
+	margin: auto;
+}
+#name {
+	position: absolute;
+	top: 35%;
+	left: -1%;
+	font-size: 50px;
+	letter-spacing: 10px;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2px 4px #000000
+}
+#name2 {
+	top: 26%;
+	left: -1%;
+	font-size: 50px;
+	letter-spacing: 10px;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2px 4px #000000
+}
+
+/*Mobile Machine*/
+@media screen and (max-width: 1600px) {
+	#avi {
+		left: 43.8%;
+	}
+}
+@media screen and (max-width: 1165px) {
+	#avi {
+		left: 42.8%;
+	}
+}
+@media screen and (max-width: 880px) {
+	#avi {
+		left: 39.8%;
+	}
+	#name2 {
+		font-size: 32px;
+	}
+	.shill {
+		width: 30px;
+		height: 30px;
+	}
+	.hello {
+		letter-spacing: 5px;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 500px) {
+	#avi {
+		left: 34.5%;
+		top: 10%;
+	}
+	#name2 {
+		font-size: 26px;
+	}
+	.hello {
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 200px) {
+	#avi {
+		left: 32.8%;
+	}
+	#name2 {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+	.hello {
+		font-size: 9px;
+	}
+}
+@media screen and (max-height: 720px) {
+	#avi {
+		top: 10%;
+		width: 125px;
+		height: 125px;
+	}
+	#name {
+		left: 0.5%;
+	}
+	#name2 {
+		font-size: 20px;
+	}
+	#contact {
+		font-size: 8px;
+	}
+}
+@media screen and (max-height: 600px) {
+	#avi {
+		top: 8%;
+		left: 31.8%;
+	}
+	#name2 {
+		font-size: 16px;
+	}
+	.shill {
+		width: 20px;
+		height: 20px;
+	}
+}
+@media screen and (max-height: 500px) {
+	#avi {
+		top: 1%;
+	}
+}
+
+/* Animations */
+#fade {
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
+	-moz-animation: fadein 4s; /* Firefox */
+	-ms-animation: fadein 4s; /* Internet Explorer */
+	-o-animation: fadein 4s; /* Opera */
+	animation: fadein 4s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+/*Fix for video on different width screens (Only works if Aspect Ratio is kept at 16:9/4:3*/
+@media screen and (max-width: 1354px) {
+	.fullscreen-bg__video {
+		width: 110%;
+	}
+}
+@media screen and (max-width: 1344px) {
+	.fullscreen-bg__video {
+		width: 115%;
+	}
+}
+@media screen and (max-width: 1228px) {
+	.fullscreen-bg__video {
+		width: 117%;
+	}
+}
+@media screen and (max-width: 1193px) {
+	.fullscreen-bg__video {
+		width: 120%;
+	}
+}
+@media screen and (max-width: 1128px) {
+	.fullscreen-bg__video {
+		width: 130%;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.fullscreen-bg__video {
+		width: 140%;
+	}
+}
+@media screen and (max-width: 963px) {
+	.fullscreen-bg__video {
+		width: 150%;
+	}
+}
+@media screen and (max-width: 897px) {
+	.fullscreen-bg__video {
+		width: 160%;
+	}
+}
+@media screen and (max-width: 820px) {
+	.fullscreen-bg__video {
+		width: 210%;
+	}
+}
+@media screen and (max-width: 790px) {
+	.fullscreen-bg__video {
+		width: 290%;
+	}
+}
+@media screen and (max-width: 510px) {
+	.fullscreen-bg__video {
+		width: 390%;
+	}
+}
+@media screen and (max-width: 360px) {
+	.fullscreen-bg__video {
+		width: 500%;
+	}
+}
+@media screen and (max-width: 290px) {
+	.fullscreen-bg__video {
+		width: 600%;
+	}
+}

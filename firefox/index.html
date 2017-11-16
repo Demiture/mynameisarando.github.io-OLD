@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<title>MyNameIsArando</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<meta property="title" content="MyNameIsArando">
+	<meta name="description" content="Website of MyNameIsArando.">
+	<meta name="author" content="MyNameIsArando">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: black;">
+	
+	<div class="fullscreen">
+
+		<video autoplay loop preload="auto" class="fullscreen-bg__video" poster="loading.png">
+
+			<source src="http://hnng.moe/f/VnF" type="video/mp4">
+			"It's 2017 what are you doing"
+
+			<!-- OG Video: https://my.mixtape.moe/frxdzg.mp4 -->
+
+		</video>
+
+	</div>
+	
+	<img src="http://hnng.moe/f/WSz" id="avi" alt="Avi" class="grow" />
+	
+	<div id="name">
+		
+		<p id="name2">MYNAMEISARANDO</p>
+
+		<hr id="fade" />
+
+		<p class="hello" id="fade">HELLO, I'M ARANDO</p>
+		<p class="hello" id="fade">PROBABLY THE HIGHEST FORM OF AIDS ON THE INTERNET</p>
+		<p class="hello" id="fade">I MAKE VIDEOS ON THE WEB AND SOMETIMES CODE SHITTY WEBSITES</p>
+
+		<ul id="fix">
+		
+			<a href="https://youtube.com/user/tylercrowhurst12345" target="blank" style="color:transparent;">
+				<img src="logos/yt.png" alt="YouTube" class="shill grow" id="fade" />
+			</a>
+			<a href="https://www.patreon.com/MyNameIsArando" target="blank" style="color:transparent;">
+				<img src="logos/patreon.png" alt="Patreon" class="shill grow" id="fade" />
+			</a>
+			<a href="https://discord.gg/track44" target="blank" style="color:transparent;">
+				<img src="logos/discord.png" alt="Discord" class="shill grow"  id="fade" />
+			</a>
+			<a href="https://myanimelist.net/profile/MyNameIsArando" target="blank" style="color:transparent;">
+				<img src="logos/mal.png" alt="Soundcloud" class="shill grow" id="fade" />
+			</a>
+			<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" target="blank" style="color:transparent;">
+				<img src="logos/github.png" alt="Github" class="shill grow" id="fade" />
+			</a>
+			<a href="http://steamcommunity.com/id/MyNameIsArando/" target="blank" style="color:transparent;">
+				<img src="logos/steam.png" alt="Steam" class="shill grow" id="fade" />
+			</a>
+			
+		</ul>
+
+		<hr style="margin-bottom: 0;" id="fade" />
+
+		<br />
+
+		<p id="datetime"></p>
+
+		<br />
+		
+		<p id="time_span" style="font-size: 9px; margin-top: -78px;"></p>
+
+		<audio autoplay loop id="volumedown">
+
+			<source src="http://hnng.moe/f/VmO" type="audio/mpeg">
+
+		</audio>
+
+		<!-- OG BG MUSIC: http://hnng.moe/f/VmO -->
+		
+		</div>
+
+		<script>
+		
+		// Time | big shoutout to zwei //
+		function updateTime(){
+    		var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			var seconds = currentTime.getSeconds()
+				if (seconds < 10){
+					seconds = "0" + seconds
+				}
+				if (minutes < 10){
+					minutes = "0" + minutes
+				}
+				var t_str = hours + ":" + minutes + ":" + seconds;
+				if(hours > 11){
+					t_str += "";
+				} else {
+					t_str += "";
+				}
+				document.getElementById('time_span').innerHTML = t_str;
+			}
+			setInterval(updateTime, 1000);
+			
+			// Date //
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+			
+			// Audio Volume //
+			document.getElementById("volumedown").volume = 0.1;
+
+			function muteBg() {
+				document.getElementById("volumedown").volume = 0;
+			}
+
+			function unmuteBg() {
+				document.getElementById("volumedown").volume = 0.1;
+			}
+
+		</script>
+
+		<footer id="footer">
+			
+			<ul style="padding: 10px;">
+				<p style="display: inline-block;" id="contact">&#169; |</p>
+				<p style="display: inline-block;" id="contact"> MyNameIsArando</p>
+				<p style="text-align: left;" id="contact">MyNameIsArando#4810 | <a href="mailto:tylercrowhurst123@gmail.com" target="blank" style="color: #fff;">E-Mail</a></p>
+			</ul>
+			
+		</footer>
+	
+	
+</body>
+</html>

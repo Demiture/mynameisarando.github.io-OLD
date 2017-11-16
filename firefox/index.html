@@ -15,9 +15,87 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="background-image: url(img/bg.png);">
+<body style="background-image: url(img/bg4.png); opacity: 40%;">
+
+	<div style="margin-top: 5%;"></div>
 	
-	<img src="img/ok.jpg" alt="image" style="max-width: 450px;" id="centerimage" />
-	
+	<div style="margin: 0 38%;">
+		<img src="img/ok.jpg" alt="image" id="centerimage" />
+
+		<br/>
+		<br/>
+		<br/>
+
+		<div style="border-left: 3px solid white; border-right: 3px solid white; border-bottom: 3px solid white;">
+			
+			<a href="https://youtube.com/" target="blank">
+				<p class="bgblue">YOUTUBE</p>
+			</a>
+
+			<a href="https://tweetdeck.twitter.com/" target="blank">
+				<p class="bgpink">TWITTER</p>
+			</a>
+
+			<a href="http://arando.club/" target="blank">
+				<p class="bgblue">ARANDO</p>
+			</a>
+
+			<a href="https://www.pixiv.net/" target="blank">
+				<p class="bgpink">PIXIV</p>
+			</a>
+
+			<a href="https://myanimelist.net/profile/MyNameIsArando" target="blank">
+				<p class="bgblue">MAL</p>
+			</a>
+
+		</div>
+
+		<p id="datetime" style="font-size: 16px; margin-top: 5%;"></p>
+		<p id="time_span" style="font-size: 12px; margin-top: -2%"></p>
+
+	</div>
+
+	<script>
+		
+		// Time | big shoutout to zwei //
+		function updateTime(){
+    		var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			var seconds = currentTime.getSeconds()
+				if (seconds < 10){
+					seconds = "0" + seconds
+				}
+				if (minutes < 10){
+					minutes = "0" + minutes
+				}
+				var t_str = hours + ":" + minutes + ":" + seconds;
+				if(hours > 11){
+					t_str += "";
+				} else {
+					t_str += "";
+				}
+				document.getElementById('time_span').innerHTML = t_str;
+			}
+			setInterval(updateTime, 1000);
+			
+			// Date //
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+			
+			// Audio Volume //
+			document.getElementById("volumedown").volume = 0.1;
+
+			function muteBg() {
+				document.getElementById("volumedown").volume = 0;
+			}
+
+			function unmuteBg() {
+				document.getElementById("volumedown").volume = 0.1;
+			}
+
+	</script>
+
+
 </body>
 </html>

@@ -20,9 +20,13 @@ hr {
 }
 p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 12px;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	font-size: 30px;
 	color: white;
 	text-align: center;
+	margin: 0;
+	padding: 5px 0;
 }
 video {
 	opacity: 0.4;
@@ -30,11 +34,26 @@ video {
 
 /* Classes */
 
+.centerlogo {
+	display: block;
+	margin: 0 auto;
+}
+.bgblue {
+	background-color: rgb(62, 201, 187);
+	border-top: 3px solid white;
+}
+.bgpink {
+	background-color: hotpink;
+	border-top: 3px solid white;
+}
 
 /* ID's */
 
 #centerimage {
-	
+	margin: 0;
+	outline: 3px solid white;
+	outline-offset: -3px;
+	width: 100%;
 }
 
 /*Mobile Machine*/
@@ -63,6 +82,9 @@ video {
 		letter-spacing: 5px;
 		margin: 0;
 	}
+	p {
+		font-size: 22px;
+	}
 }
 @media screen and (max-width: 500px) {
 	#avi {
@@ -74,6 +96,9 @@ video {
 	}
 	.hello {
 		font-size: 9px;
+	}
+	p {
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 200px) {

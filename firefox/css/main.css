@@ -40,11 +40,11 @@ video {
 	margin: 0 auto;
 }
 .bgblue {
-	background-color: rgb(62, 201, 187);
+	background-color: rgb(44, 139, 128);
 	border-top: 1px solid white;
 }
 .bgpink {
-	background-color: hotpink;
+	background-color: rgb(170, 71, 121);
 	border-top: 1px solid white;
 }
 

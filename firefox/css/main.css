@@ -18,6 +18,12 @@ button {
 hr {
 	margin: 0 25%;
 }
+li {
+	position: absolute;
+	left: 78%;
+	top: 18%;
+	list-style-type: none;
+}
 p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: lighter;
@@ -25,7 +31,7 @@ p {
 	font-size: 30px;
 	color: white;
 	text-align: center;
-	margin: 0;
+	margin: 20px 0;
 	padding: 5px 0;
 	text-shadow: 1px 1px 0px #000000;
 }
@@ -35,18 +41,6 @@ video {
 
 /* Classes */
 
-.centerlogo {
-	display: block;
-	margin: 0 auto;
-}
-.bgblue {
-	background-color: rgb(44, 139, 128);
-	border-top: 1px solid white;
-}
-.bgpink {
-	background-color: rgb(170, 71, 121);
-	border-top: 1px solid white;
-}
 
 /* ID's */
 

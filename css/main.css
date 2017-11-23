@@ -1,275 +1,297 @@
-a:focus, a:hover {
-	color: transparent;
-}
-a {
-	text-decoration: none;
-	color: transparent;
-	text-shadow: 2px 2px 4px transparent;
-}
-body {
-	margin: 0px;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	background-color: black;
-}
-button {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+/* /r/ooerintensifies CSS experiments!
+
+Best of luck, and may you never disable CSS!
+
+*/
+
+ /*----- Edit number of subscribers/online -----*/
+
+ div.titlebox span.word {
+	display: none
+	}
 	
-}
-hr {
-	margin: 0 25%;
-}
-p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 12px;
-	color: white;
-	text-align: center;
-}
-video {
-	opacity: 0.4;
-}
-
-/* Classes */
-.fullscreen {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.hello {
-	letter-spacing: 5px;
-	margin: 0 25px 0 0;
-}
-.shill {
-	width: 40px;
-	height: 40px;
-}
-
-/* ID's */
-#avi {
-	width: 150px;
-	border: 1px solid white;
-	border-radius: 50%;	
-	z-index: 1;
-	margin: 0 auto;
-	display: block;
-}
-#datetime {
-	font-size: 14px;
-}
-#fix {
-	margin-right: 35px;
-}
-#line {
-	padding: 100px 0 0 0;
-	border: 1px solid white;
-	max-width: 1px;
-	top: 93%;
-	left: 50%;
-	margin: auto;
-}
-#margin1 {
-	margin-top: 115px;
-}
-#margin2 {
-	margin-top: 50px;
-}
-#name {
-	position: absolute;
-	font-size: 50px;
-	letter-spacing: 10px;
-	text-align: center;
-	width: 100%;
-	text-shadow: 2px 2px 4px #000000;
-}
-#name2 {
-	top: 26%;
-	left: -1%;
-	font-size: 50px;
-	letter-spacing: 10px;
-	text-align: center;
-	width: 100%;
-	text-shadow: 2px 2px 4px #000000;
-}
-
-/*Margins*/
-@media screen and (max-height: 720px) {
-	#margin1 {
-		margin-top: 90px;
+	 p.users-online span.number:after {
+	content: " hombres currently intensifying"
 	}
-	#margin2 {
-		margin-top: 35px;
+	
+	span.subscribers:after {
+	content: " hombres intensified"
 	}
-}
-@media screen and (max-height: 600px) {
-	#margin1 {
-		margin-top: 70px;
+	
+	/* Begin /r/redditintensifies CSS.
+	
+	All credit to /u/LowSociety.
+	
+	*/
+	
+	@keyframes spaceboots {
+		0% { transform: translate(2px, 1px) rotate(0deg); }
+		10% { transform: translate(-1px, -2px) rotate(-1deg); }
+		20% { transform: translate(-3px, 0px) rotate(1deg); }
+		30% { transform: translate(0px, 2px) rotate(0deg); }
+		40% { transform: translate(1px, -1px) rotate(1deg); }
+		50% { transform: translate(-1px, 2px) rotate(-1deg); }
+		60% { transform: translate(-3px, 1px) rotate(0deg); }
+		70% { transform: translate(2px, 1px) rotate(-1deg); }
+		80% { transform: translate(-1px, -1px) rotate(1deg); }
+		90% { transform: translate(2px, 2px) rotate(0deg); }
+		100% { transform: translate(1px, -2px) rotate(-1deg); }
 	}
-	#margin2 {
-		margin-top: 25px;
+	
+	@-moz-keyframes spaceboots {
+		0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+		10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+		20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+		30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+		40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+		50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+		60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+		70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+		80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+		90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+		100% { -moz-transform: translate(1px, -2px) rotate(-1deg); }
 	}
-}
-
-/*Mobile Machine*/
-@media screen and (max-width: 880px) {
-	#name2 {
-		font-size: 32px;
+	
+	@-webkit-keyframes spaceboots {
+		0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+		10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+		20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+		30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+		40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+		50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+		60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+		70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+		80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+		90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+		100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 	}
-	.shill {
-		width: 30px;
-		height: 30px;
+	
+	/*------------------------------------------------
+	
+	  /r/Ooer CSS
+	  Bringing beautiful to your browser
+		since the Industrial Revolution.
+	  The collaborative effort of:
+	  /u/Ooer, /u/thelethalkind, /u/Wisey,
+		and /u/williammck
+	
+	------------------------------------------------*/
+	
+	/* Begin text styling */
+	body {
+	  font-family: "Comic Sans MS";
+	  background-color: #FFB057 !important;
+	  background-image: url(%%bbc%%);
+	  content: "oh man i am not good with computer plz to help";
+	  text-transform: uppercase;
+	  font-size: 25px !important;
+	
+	/* shaking intensifies*/
+	  -webkit-animation-name: spaceboots;
+	  -webkit-animation-duration: 0.8s;
+	  -webkit-transform-origin:50% 50%;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-timing-function: linear;
+	  -moz-animation-name: spaceboots;
+	  -moz-animation-duration: 0.8s;
+	  -moz-transform-origin:50% 50%;
+	  -moz-animation-iteration-count: infinite;
+	  -moz-animation-timing-function: linear;
+	  animation-name: spaceboots;
+	  animation-duration: 0.8s;
+	  transform-origin:50% 50%;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: linear;
 	}
-	.hello {
-		letter-spacing: 5px;
-		margin: 0;
+	h1 {
+	  color: green !important;
+	  text-align: center;
 	}
-}
-@media screen and (max-width: 500px) {
-	#name2 {
-		font-size: 26px;
+	p {
+	  font-family: "Courier New" !important;
+	  font-size: 25px;
+	  background: yellow;
+	  border: 20px solid red;
 	}
-	.hello {
-		font-size: 9px;
+	.md p {
+	  font-family: "Arial", sans-serif !important;
 	}
-}
-@media screen and (max-width: 200px) {
-	#name2 {
-		font-size: 18px;
-		letter-spacing: 2px;
+	a:hover {
+	  font-size: 500px;
+	  color: green;
 	}
-	.hello {
-		font-size: 9px;
+	/* End text styling */
+	
+	/* Begin header styling */
+	#header {
+	  background-color: #FF00FF;
 	}
-}
-@media screen and (max-height: 720px) {
-	#name2 {
-		font-size: 20px;
+	/* End header styling */
+	
+	/* Begin sidebar styling */
+	.side {
+	  background-color: blue;
 	}
-	#contact {
-		font-size: 8px;
+	.title a:before {
+	  content: url(%%jizz%%)
 	}
-}
-@media screen and (max-height: 600px) {
-	#name2 {
-		font-size: 16px;
+	div.titlebox span.number {
+	  font-weight: bold;
+	  color: purple;
 	}
-	.shill {
-		width: 20px;
-		height: 20px;
+	div.titlebox span.number:before {
+	  content: "good bones and calcium come to you "
 	}
-}
-@media screen and (max-height: 500px) {
-	#avi {
-		top: 1%;
+	div.titlebox span.number:after {
+	  content: " thank mr skeltal for no hammocks"
 	}
-}
-
-/* Animations */
-#fade {
-	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
-	-moz-animation: fadein 4s; /* Firefox */
-	-ms-animation: fadein 4s; /* Internet Explorer */
-	-o-animation: fadein 4s; /* Opera */
-	animation: fadein 4s;
-}
-
-@keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-/* Firefox */
-@-moz-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera */
-@-webkit-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
-
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
-
-/*Fix for video on different width screens (Only works if Aspect Ratio is kept at 16:9/4:3*/
-@media screen and (max-width: 1354px) {
-	.fullscreen-bg__video {
-		width: 110%;
+	div.titlebox span.word {
+	  display: none
 	}
-}
-@media screen and (max-width: 1344px) {
-	.fullscreen-bg__video {
-		width: 115%;
+	.side blockquote + hr {
+	  border-width: 0;
+	  width: 0;
+	  background-color: transparent;
+	  margin: 10px 0 0;
 	}
-}
-@media screen and (max-width: 1228px) {
-	.fullscreen-bg__video {
-		width: 117%;
+	/* End sidebar styling */
+	
+	/* Begin footer styling */
+	.footer-parent {
+	  height: 800px;
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	  clear: both;
+	  text-align: center;
+	  width: 100%;
 	}
-}
-@media screen and (max-width: 1193px) {
-	.fullscreen-bg__video {
-		width: 120%;
+	.footer-parent:after {
+	  content: "â™¥â™¥â™¥ liek dis cry evertim ";
+	  font-size: 120px;
+	  background: white !important;
 	}
-}
-@media screen and (max-width: 1128px) {
-	.fullscreen-bg__video {
-		width: 130%;
+	/* End footer styling */
+	
+	/* Begin announcement sticky */
+	div.content {
+	  /* This lowers the links to create space */
+	  margin-top: 50px;
 	}
-}
-@media screen and (max-width: 1080px) {
-	.fullscreen-bg__video {
-		width: 140%;
+	.titlebox form {
+	  /* Hack to enable repositioning of child elements */
+	  position: static;
 	}
-}
-@media screen and (max-width: 963px) {
-	.fullscreen-bg__video {
-		width: 150%;
+	.side h3:nth-of-type(1) {
+	  /* This code positions the sticky */
+	  position: absolute;
+	  display: block;
+	  top: 130px;
+	  left: 40px;
+	  /* This code styles the sticky */
+	  background-color: #119911;
+	  color: #555555;
+	  text-align: left;
+	  margin: 15px;
+	  border-radius: 8px;
+	  width: 50%;
+	  padding: 7px 0px 7px 40px;
 	}
-}
-@media screen and (max-width: 897px) {
-	.fullscreen-bg__video {
-		width: 160%;
+	/* End announcement sticky */
+	
+	/* Begin username things */
+	.link:not(.spam) .author, .comment .author, .side .author {
+	  display: none !important;
 	}
-}
-@media screen and (max-width: 820px) {
-	.fullscreen-bg__video {
-		width: 210%;
+	.userattrs, .userattrs * {
+	  font-size: 0;
+	  text-indent: -9999px;
+	  overflow: hidden;
+	  visibility: hidden !important;
 	}
-}
-@media screen and (max-width: 790px) {
-	.fullscreen-bg__video {
-		width: 290%;
+	.spam .author + * {
+	  display: none !important;
 	}
-}
-@media screen and (max-width: 510px) {
-	.fullscreen-bg__video {
-		width: 390%;
+	.userattrs:before, .userattrs:after {
+	  font-size: 10px;
+	  visibility: visible !important;
 	}
-}
-@media screen and (max-width: 360px) {
-	.fullscreen-bg__video {
-		width: 500%;
+	.author + *:before {
+	  content: "Anonymous ";
+	  color: #369;
 	}
-}
-@media screen and (max-width: 290px) {
-	.fullscreen-bg__video {
-		width: 600%;
+	.comment .author + *:before {
+	  font-weight: bold;
 	}
-}
+	.author.moderator + *:after, .side .author + *:after {
+	  content: " ## Mod ##";
+	  color: #900;
+	}
+	/* End username things */
+	
+	/* Begin OH MAN */
+	p:after {
+	  content: "oh man i am not good with computer plz to help";
+	}
+	a:after {
+	  content: "oh man i am not good with computer plz to help";
+	}
+	body:after {
+	  content: "oh man i am not good with computer plz to help";
+	  font-size: 120px !important;
+	}
+	/* End OH MAN */
+	
+	/* Begin floating images */
+	body:after {
+	  content: url(%%pony%%);
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  z-index: 1;
+	  position: fixed;
+	}
+	body:after {
+	  content: url(%%pony2%%);
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  z-index: 2;
+	  position: fixed;
+	}
+	body:after {
+	  content: url(%%garlic%%);
+	  position: absolute;
+	  bottom: 0;
+	  left: 600px;
+	  z-index: 3;
+	  position: fixed;
+	}
+	/* End floating images */
+	
+	/* Begin #header-img background color change */
+	@-webkit-keyframes header-img {
+	  0%   {background:red;}
+	  25%  {background:yellow;}
+	  50%  {background:blue;}
+	  75%  {background:green;}
+	  100% {background:red;}
+	}
+	@keyframes header-img {
+	  0%   {background:red;}
+	  25%  {background:yellow;}
+	  50%  {background:blue;}
+	  75%  {background:green;}
+	  100% {background:red;}
+	}
+	#header-img {
+	  -webkit-animation: header-img 5s linear infinite;
+	  animation: header-img 5s linear infinite;
+	}
+	
+	* {
+	   cursor: url(%%sock1%%), auto;
+	}
+	
+	/* End #header-img background color change */
+	
+	

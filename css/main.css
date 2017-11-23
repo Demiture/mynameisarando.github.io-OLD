@@ -59,10 +59,8 @@ video {
 	border: 1px solid white;
 	border-radius: 50%;	
 	z-index: 1;
-	margin: 0 0 75px 0;
-	position: absolute;
-	left: 45%;
-	top: 14%;
+	margin: 0 auto;
+	display: block;
 }
 #datetime {
 	font-size: 14px;
@@ -78,10 +76,14 @@ video {
 	left: 50%;
 	margin: auto;
 }
+#margin1 {
+	margin-top: 115px;
+}
+#margin2 {
+	margin-top: 50px;
+}
 #name {
 	position: absolute;
-	top: 35%;
-	left: -1%;
 	font-size: 50px;
 	letter-spacing: 10px;
 	text-align: center;
@@ -98,21 +100,26 @@ video {
 	text-shadow: 2px 2px 4px #000000;
 }
 
+/*Margins*/
+@media screen and (max-height: 720px) {
+	#margin1 {
+		margin-top: 90px;
+	}
+	#margin2 {
+		margin-top: 35px;
+	}
+}
+@media screen and (max-height: 600px) {
+	#margin1 {
+		margin-top: 70px;
+	}
+	#margin2 {
+		margin-top: 25px;
+	}
+}
+
 /*Mobile Machine*/
-@media screen and (max-width: 1600px) {
-	#avi {
-		left: 43.8%;
-	}
-}
-@media screen and (max-width: 1165px) {
-	#avi {
-		left: 42.8%;
-	}
-}
 @media screen and (max-width: 880px) {
-	#avi {
-		left: 39.8%;
-	}
 	#name2 {
 		font-size: 32px;
 	}
@@ -126,10 +133,6 @@ video {
 	}
 }
 @media screen and (max-width: 500px) {
-	#avi {
-		left: 34.5%;
-		top: 10%;
-	}
 	#name2 {
 		font-size: 26px;
 	}
@@ -138,9 +141,6 @@ video {
 	}
 }
 @media screen and (max-width: 200px) {
-	#avi {
-		left: 32.8%;
-	}
 	#name2 {
 		font-size: 18px;
 		letter-spacing: 2px;
@@ -150,14 +150,6 @@ video {
 	}
 }
 @media screen and (max-height: 720px) {
-	#avi {
-		top: 10%;
-		width: 125px;
-		height: 125px;
-	}
-	#name {
-		left: 0.5%;
-	}
 	#name2 {
 		font-size: 20px;
 	}
@@ -166,10 +158,6 @@ video {
 	}
 }
 @media screen and (max-height: 600px) {
-	#avi {
-		top: 8%;
-		left: 31.8%;
-	}
 	#name2 {
 		font-size: 16px;
 	}

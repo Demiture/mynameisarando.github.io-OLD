@@ -29,8 +29,12 @@
 		</video>
 
 	</div>
+
+	<div id="margin1"></div>
 	
-	<img src="http://hnng.moe/f/WSz" id="avi" alt="Avi" class="grow" />
+	<img src="http://hnng.moe/f/Wtq" id="avi" alt="Avi" class="grow" />
+
+	<div id="margin2"></div>
 	
 	<div id="name">
 		
@@ -47,8 +51,8 @@
 			<a href="https://youtube.com/user/tylercrowhurst12345" target="blank" style="color:transparent;">
 				<img src="logos/yt.png" alt="YouTube" class="shill grow" />
 			</a>
-			<a href="https://www.patreon.com/MyNameIsArando" target="blank" style="color:transparent;">
-				<img src="logos/patreon.png" alt="Patreon" class="shill grow" />
+			<a href="mailto:tylercrowhurst123@gmail.com" target="blank" style="color:transparent;">
+				<img src="logos/mail.png" alt="Patreon" class="shill grow" />
 			</a>
 			<a href="https://discord.gg/track44" target="blank" style="color:transparent;">
 				<img src="logos/discord.png" alt="Discord" class="shill grow" />
@@ -77,15 +81,17 @@
 
 		<audio autoplay loop id="volumedown">
 
-			<source src="http://hnng.moe/f/VmO" type="audio/mpeg">
+			<source src="http://hnng.moe/f/Wtu" type="audio/mpeg">
 
 		</audio>
 
 		<!-- OG BG MUSIC: http://hnng.moe/f/VmO -->
 		
-		</div>
+	</div>
 
-		<script>
+	<p style="position: absolute; right: 1%; top: 97%;">&#169; | MyNameIsArando</p>
+
+	<script>
 		
 		// Time | big shoutout to zwei //
 		function updateTime(){
@@ -114,28 +120,17 @@
 			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
 			
 			// Audio Volume //
-			document.getElementById("volumedown").volume = 0.1;
+			document.getElementById("volumedown").volume = 0.01;
 
 			function muteBg() {
 				document.getElementById("volumedown").volume = 0;
 			}
 
 			function unmuteBg() {
-				document.getElementById("volumedown").volume = 0.1;
+				document.getElementById("volumedown").volume = 0.01;
 			}
 
-		</script>
+	</script>
 
-		<footer id="footer">
-			
-			<ul style="padding: 10px;">
-				<p style="display: inline-block;" id="contact">&#169; |</p>
-				<p style="display: inline-block;" id="contact"> MyNameIsArando</p>
-				<p style="text-align: left;" id="contact">MyNameIsArando#4810 | <a href="mailto:tylercrowhurst123@gmail.com" target="blank" style="color: #fff;">E-Mail</a></p>
-			</ul>
-			
-		</footer>
-	
-	
 </body>
 </html>

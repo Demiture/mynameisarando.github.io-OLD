@@ -17,6 +17,7 @@ button {
 }
 hr {
 	margin: 0 25%;
+	border: 1px solid white;
 }
 li {
 	position: absolute;

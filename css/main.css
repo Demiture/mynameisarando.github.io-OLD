@@ -99,6 +99,18 @@ video {
 	width: 100%;
 	text-shadow: 2px 2px 4px #000000;
 }
+#stuff {
+	position: absolute;
+	left: 2%;
+	top: 120%;
+	display: block;
+	width: 140px;
+	height: 140px;
+	opacity: 0.4;
+}
+#stuff:hover {
+	opacity: 1;
+}
 
 /*Margins*/
 @media screen and (max-height: 720px) {

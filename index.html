@@ -133,20 +133,23 @@
 			}
 			setInterval(updateTime, 1000);
 			
-			// Date //
+		// Date //
+		function dateTime(){
 			var dt = new Date();
 			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+		}
+		setInterval(dateTime, 1000);
 			
-			// Audio Volume //
+		// Audio Volume //
+		document.getElementById("volumedown").volume = 0.05;
+
+		function muteBg() {
+			document.getElementById("volumedown").volume = 0;
+		}
+
+		function unmuteBg() {
 			document.getElementById("volumedown").volume = 0.05;
-
-			function muteBg() {
-				document.getElementById("volumedown").volume = 0;
-			}
-
-			function unmuteBg() {
-				document.getElementById("volumedown").volume = 0.05;
-			}
+		}
 
 	</script>
 

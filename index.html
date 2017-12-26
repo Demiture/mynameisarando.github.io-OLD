@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta property="title" content="MyNameIsArando">
 	<meta name="description" content="A little website I coded in my spare hours. Links to my profiles and various other places.">
 	<meta name="author" content="MyNameIsArando">
@@ -72,9 +73,9 @@
 				<img src="logos/twitter.png" alt="Twitter" class="shill grow" />
 			</a>
 
-			<a href="crypto.txt" target="blank" style="color:transparent;">
-				<img src="logos/btc.png" alt="Twitter" class="shill grow" />
-			</a>
+			
+			<img src="logos/btc.png" alt="Twitter" class="shill grow" id="btc" style="cursor: pointer;" />
+			
 
 			<a href="https://github.com/MyNameIsArando/mynameisarando.github.io" target="blank" style="color:transparent;">
 				<img src="logos/github.png" alt="Github" class="shill grow" />
@@ -85,6 +86,16 @@
 			</a>
 			
 		</ul>
+
+		<div id="crypto">
+
+			<p><strong>BTC:</strong> 13qxfueaZ6kmW2wzGJLX3Cys2TcKBaH3Hi</p>
+			<p><strong>LTC:</strong> LV4LhQu5aQBbbvN5NeiSsqAfaPnwqj4X4e</p>
+			<p><strong>ETH:</strong> 0xe7298c259df420615a1dd7e7c24a9d15f9f66008</p>
+			<p><strong>XMR:</strong> 45TwW3ydJo12jakRYqvfM27zKtbvfukkmZurHjgL8QzF3xrzSWhqWC5WbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm3xBuybJ</p>
+			<p><strong>BCN:</strong> 24TgRL2YvHefqGKDLj6adNNLZm8WxTqVqjcm7q9QTD2fbtTVTCDn5nvKA32X5SrJuDPBgXTsSmQRoAbCzcDvM2d2PcMvcfU</p>
+
+		</div>
 
 		<hr style="margin-bottom: 0;" />
 
@@ -150,6 +161,12 @@
 		function unmuteBg() {
 			document.getElementById("volumedown").volume = 0.05;
 		}
+
+		$(document).ready(function(){
+			$("#btc").click(function(){
+				$("#crypto").slideToggle("slow");
+			});
+		});
 
 	</script>
 

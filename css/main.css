@@ -62,6 +62,9 @@ video {
 	margin: 0 auto;
 	display: block;
 }
+#crypto {
+	display: none;
+}
 #datetime {
 	font-size: 14px;
 }

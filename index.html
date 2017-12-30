@@ -69,6 +69,10 @@
 				<img src="logos/mal.png" alt="Mal" class="shill grow" />
 			</a>
 
+
+			<img src="logos/2018.png" alt="Button" class="shill grow" id="2018" style="cursor: pointer;" />
+
+
 			<a href="https://twitter.com/mynameisarando" target="blank" style="color:transparent;">
 				<img src="logos/twitter.png" alt="Twitter" class="shill grow" />
 			</a>
@@ -86,6 +90,35 @@
 			</a>
 			
 		</ul>
+
+		<div id="goals">
+
+			 <p>
+				<span style="color:#f47442;">
+					Learn Japanese<br />
+					Finish learning JavaScript<br />
+					Stop touching PHP with a 10 foot pole<br />
+					Learn Python, C, C++ and graduate from being a lowly webdev<br />
+					Teach myself Adobe After Effects<br />
+					Teach myself Adobe illustrator<br />
+					Teach myself InDesign<br />
+					Keep up with <a href="http://demiture.moe/" target="blank" style="color: red;">Demi</a><br />
+					Master Adobe Premiere<br />
+					Make some designs in Photoshop <br />
+					Put at least 2 hours aside each day to learn something new and/or study<br />
+					Dabble into 3D modelling<br />
+					Upload at least once a month<br />
+					Learn KLWP<br />
+					Rice PC<br />
+					Drink Soda Sparingly <br />
+					Limit Energy Drinks<br />
+					Drink Water daily<br />
+					Actually learn shit I find interesting<br />
+				</span>
+			</p>
+
+		</div>
+
 
 		<div id="crypto">
 
@@ -165,6 +198,12 @@
 		$(document).ready(function(){
 			$("#btc").click(function(){
 				$("#crypto").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$("#2018").click(function(){
+				$("#goals").slideToggle("slow");
 			});
 		});
 

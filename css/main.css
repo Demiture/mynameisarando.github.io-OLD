@@ -71,6 +71,9 @@ video {
 #fix {
 	margin-right: 35px;
 }
+#goals {
+	display: none;
+}
 #line {
 	padding: 100px 0 0 0;
 	border: 1px solid white;

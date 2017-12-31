@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html>
 
-<title>Chess Fam</title>
+<title>Arando Mining</title>
 
 <head>
 	<!-- Website & Images hosted by Github. Background video and music hosted by hnng.moe.-->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+	<!-- P.S Site only works on 1080p screens, higher/lower resolutions may or may not look like shit -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Coded from scratch using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">  
 	<script src="js/script.js"></script>
 	<meta property="title" content="MyNameIsArando">
-	<meta name="description" content="A little website I coded in my spare hours. Links to my profiles and various other places.">
+	<meta name="description" content="Pls mine LTC for me">
 	<meta name="author" content="MyNameIsArando">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <div id="test">
-        <script src="https://lichess.org/embed?w=1920&h=1080"></script>
-    </div>
+	<a href="http://arando.club/" style="color: white;"><p id="arando">Go Back</p></a>
 
-    <iframe style="opacity: 0;" scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincore/?ref=AAAF90A2B851&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
+	<div id="miner">
 
-    <audio autoplay controls loop>
+		<iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/litecoin/?ref=AAAF90A2B851&mode=widget" style="overflow:hidden;width:324px;height:332px;"></iframe>
+
+	</div>
+
+	<div id="yeahok">
+
+		<div id="you">
+
+			<p class="text" style="font-family: 'Concert One', cursive;">You have been mining for...</p>
+			<p id="count" style="font-family: 'Concert One', cursive;">0</p>
+			<p class="text2" style="font-family: 'Concert One', cursive;"> Seconds</p>
+
+		</div>
+
+		<video autoplay loop preload="auto" id="volumedown2" class="vid">
+
+				<source src="https://my.mixtape.moe/jottme.mp4" type="video/mp4">
+				"It's 2017 what are you doing"
+
+			</video>
+
+		<p id="address"><strong>LTC Address:</strong> LV4LhQu5aQBbbvN5NeiSsqAfaPnwqj4X4e</p>
+		
+		<div id="mutediv">
+
+			<img src="img/mute.png" alt="mute" id="mute" class="grow" onclick="muteBg()" />
+			<img src="img/unmute.png" alt="mute" id="mute" class="grow" onclick="unmuteBg()" />
+
+		</div>
+
+		<img src="img/gif.gif" alt="Operation Shekel Steal" id="mining" />
+		<img src="img/god.png" alt="Operation Shekel Steal" id="mining2" />
+		<img src="img/late.png" alt="Operation Shekel Steal" id="mining3" />
+		<img src="img/bills.png" alt="Operation Shekel Steal" id="mining4" />
+		<img src="img/ok.png" alt="Operation Shekel Steal" id="mining5" />
+
+	</div>
+
+	<p id="yeahoktext">Put window to at least 1080p to get the full experience.</p>
+	
+	<audio autoplay loop id="volumedown">
                 
         <source src="https://my.mixtape.moe/cccdne.mp3" type="audio/mpeg">
-                
-    </audio>
+		<!-- THE GOYIM KNOW SHUT IT DOWN -->
+			
+	</audio>
+
+	
+	
+	<script>
+		document.getElementById("volumedown").volume = 0.05;
+
+		document.getElementById("volumedown2").volume = 0.01;
+
+		function muteBg() {
+			document.getElementById("volumedown").volume = 0;
+		}
+
+		function unmuteBg() {
+			document.getElementById("volumedown").volume = 0.05;
+		}
+
+		var add = (function () {
+			var counter = 0;
+			return function () {return counter += 1;}
+		})();
+
+		function Counter(){
+			document.getElementById("count").innerHTML = add();
+		}
+		setInterval(Counter, 1000);
+	
+	</script>
         
 </body>
 

@@ -43,6 +43,9 @@ p {
     padding: 20px 5px;
     margin-top: 90px;
 }
+#footerlogo {
+    display: inline-block;
+}
 #footmargin {
     margin: 0 20%;
 }
@@ -112,4 +115,10 @@ p {
     font-weight: 200;
     letter-spacing: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 1653px) {
+	#footerlogo {
+        display: none;
+    }
 }

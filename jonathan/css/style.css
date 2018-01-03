@@ -8,7 +8,16 @@ p {
 }
 
 /* Classes */
-
+.faq-head {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+}
+.faq-text {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 50px;
+}
 .footer {
     display: inline-block;
     margin-right: 10%;
@@ -23,6 +32,11 @@ p {
 
 #bodybg {
     background-color: #101010;
+}
+#faq {
+    display: block;
+    margin: 0 16%;
+    text-align: left;
 }
 #foot {
     background-color: #1d1d1d;

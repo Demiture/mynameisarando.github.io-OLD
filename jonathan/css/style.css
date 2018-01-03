@@ -1,0 +1,74 @@
+hr {
+    margin: 0 30%;
+}
+p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+/* Classes */
+
+.selling {
+    display: block;
+    margin: 0 20%;
+}
+
+/* ID's */
+
+#bodybg {
+    background-color: #101010;
+}
+#image {
+    background-image: url(../img/placeholdercrop.png);
+    height: 500px;
+    margin-top: -20px;
+    border-bottom: 5px solid black;
+}
+#imagehr {
+    margin: 0 42%;
+}
+#imagetext {
+    padding-top: 5%;
+    font-size: 46px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 1px 2px #000;
+}
+#imagetext2 {
+    padding-top: 1%;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+#mediahead {
+    color: white;
+    font-size: 24px;
+}
+#mediahead-right {
+    color: white;
+    font-size: 24px;
+    text-align: right;
+}
+#mediatext-left {
+    color: white;
+    text-align: left;
+}
+#mediatext-right {
+    color: white;
+    text-align: right;
+}
+#sellingpoint {
+    display: block;
+    margin: 0 16%;
+}
+#titletext {
+    margin-top: 10px;
+    font-size: 46px;
+    font-weight: 200;
+    letter-spacing: 10px;
+    text-align: center;
+}

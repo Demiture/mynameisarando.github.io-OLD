@@ -8,6 +8,21 @@ p {
 }
 
 /* Classes */
+
+.button {
+    background-color: rgb(0, 190, 41);
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-right: 20%
+}
 .faq-head {
     font-weight: bold;
     font-size: 22px;
@@ -17,6 +32,30 @@ p {
     font-size: 18px;
     text-align: left;
     margin-bottom: 50px;
+}
+.games {
+    height: 200px;
+    width: 200px;
+    display: block;
+    background-size: contain;
+}
+.games-cov {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 3px 7px;
+    margin: 20px 10px;
+    vertical-align: middle;
+}
+.games-head {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+.games-text {
+    font-size: 16px;
+    margin-top: 0px;
 }
 .footer {
     display: inline-block;
@@ -62,6 +101,10 @@ p {
     letter-spacing: 2px;
     margin-bottom: -10px;
     font-size: 11px;
+}
+#gamepage {
+    display: block;
+    margin: 0 5%;
 }
 #image {
     background-image: url(../img/placeholdercrop.png);
@@ -115,6 +158,9 @@ p {
     font-weight: 200;
     letter-spacing: 10px;
     text-align: center;
+}
+#ul-fix {
+    margin-left: 40px;
 }
 
 @media screen and (max-width: 1653px) {

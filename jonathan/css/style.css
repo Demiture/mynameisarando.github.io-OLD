@@ -177,9 +177,19 @@ p {
 
 /* Media */
 
+@media screen and (max-width: 1453px) {
+	#ul-fix {
+        margin-left: 3px;
+    }
+}
+@media screen and (max-width: 1025px) {
+	#ul-fix {
+        margin-left: 100px;
+    }
+}
 @media screen and (max-width: 1653px) {
 	#footerlogo {
-        display: none;
+        display: none;margin-left: 3px;
     }
 }
 @media screen and (max-width: 1366px) {

@@ -116,6 +116,10 @@ p {
     margin-top: -20px;
     border-bottom: 5px solid #32A1FF;
     border-top: 5px solid #32A1FF;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #imagehr {
     margin: 0 42%;

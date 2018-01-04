@@ -65,7 +65,7 @@ p {
 .selling {
     display: block;
     padding: 0 20% 90px;
-    background-image: url(../img/placeholder2.jpg);
+    background-image: url(../img/bottomimage.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ p {
     margin: 0 5%;
 }
 #image {
-    background-image: url(../img/placeholder.jpg);
+    background-image: url(../img/topimage.jpg);
     height: 500px;
     margin-top: -20px;
     border-bottom: 5px solid #32A1FF;

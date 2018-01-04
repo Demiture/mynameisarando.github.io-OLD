@@ -140,6 +140,9 @@ p {
     text-align: center;
     text-shadow: 1px 1px #000;
 }
+#mediai {
+    width: 90px;
+}
 #mediahead {
     color: white;
     font-size: 24px;
@@ -177,5 +180,34 @@ p {
 @media screen and (max-width: 1653px) {
 	#footerlogo {
         display: none;
+    }
+}
+@media screen and (max-width: 1366px) {
+	#footerlogo {
+        display: none;
+    }
+    #imagetext {
+        font-size: 22px;
+    }
+    #imagetext2 {
+        font-size: 16px;
+    }
+    #titletext {
+        font-size: 24px;
+    }
+    #ul-fix {
+        margin-left: 0;
+    }
+    p {
+        font-size: 9px;
+    }
+    #image {
+        height: 300px;
+    }
+    #mediai {
+        width: 60px;
+    }
+    .selling {
+        padding: 0 0 90px;
     }
 }

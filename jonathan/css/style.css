@@ -111,7 +111,7 @@ p {
     margin: 0 5%;
 }
 #image {
-    background-image: url(../img/topimage.jpg);
+    background-image: url(../img/topimage.png);
     height: 500px;
     margin-top: -20px;
     border-bottom: 5px solid #32A1FF;

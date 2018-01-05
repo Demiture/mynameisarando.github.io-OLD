@@ -113,7 +113,7 @@ p {
 }
 #image {
     background-image: url(../img/topimage.png);
-    height: 500px;
+    height: 100%;
     margin-top: -20px;
     border-bottom: 5px solid #32A1FF;
     border-top: 5px solid #32A1FF;

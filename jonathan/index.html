@@ -231,6 +231,25 @@
             });
 
             });
+
+            const show = [
+                "img/slideshow1.png",
+                "img/slideshow2.jpg",
+                "img/slideshow3.png"
+                ]
+
+            const node = document.getElementById("image");
+
+            const cycleImages = (images, container, step) => {
+                images.forEach((image, index) => (
+                setTimeout(() => {
+                    container.style.backgroundImage = `url(${image})`  
+                }, step * (index + 1))
+            ))
+            setTimeout(() => cycleImages(images, container, step), step * images.length)
+            }
+
+            cycleImages(show, node, 15000)
         
         </script>
 

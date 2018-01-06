@@ -62,6 +62,9 @@ p {
     margin-right: 10%;
     text-align: left;
 }
+.module {
+    margin-bottom: 70px;
+}
 .selling {
     display: block;
     padding: 0 0% 90px;
@@ -161,8 +164,14 @@ p {
     color: white;
     text-align: right;
 }
-.module {
-    margin-bottom: 70px;
+@font-face {
+    font-family: Lovelo-Black;
+    src: url("../font.tff")
+}
+#navbartext {
+    font-family: Lovelo-Black;
+    font-weight: bold;
+    font-size: 15px;
 }
 #sellingpoint {
     display: block;

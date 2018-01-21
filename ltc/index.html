@@ -76,17 +76,6 @@
 	
 	
 	<script>
-		document.getElementById("volumedown").volume = 0.05;
-
-		document.getElementById("volumedown2").volume = 0.01;
-
-		function muteBg() {
-			document.getElementById("volumedown").volume = 0;
-		}
-
-		function unmuteBg() {
-			document.getElementById("volumedown").volume = 0.05;
-		}
 
 		var add = (function () {
 			var counter = 0;
@@ -97,6 +86,16 @@
 			document.getElementById("count").innerHTML = add();
 		}
 		setInterval(Counter, 1000);
+
+		document.getElementById("volumedown").volume = 0.05;
+
+		function muteBg() {
+			document.getElementById("volumedown").volume = 0;
+		}
+
+		function unmuteBg() {
+			document.getElementById("volumedown").volume = 0.05;
+		}
 	
 	</script>
         

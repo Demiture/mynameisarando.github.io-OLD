@@ -77,23 +77,3 @@ video {
 }
 /* @end */
 -->
-#spinning-jew {
-	animation-name: spinning-jew;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-}
-@-webkit-keyframes spinning-jew {
-	0% {
-	  -webkit-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	  -webkit-transform-origin: 125% 125%;
-	  transform-origin: 125% 125%;
-	}
-	100% {
-	  -webkit-transform: rotate(360deg);
-	  transform: rotate(360deg);
-	  -webkit-transform-origin: 125% 125%;
-	  transform-origin: 125% 125%;
-	}
-}
-  

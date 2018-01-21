@@ -24,13 +24,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="background-color: black;" id="fade">
+<body style="background-color: #101010;">
 
 	<div class="pace"></div>
 	
-	<div class="fullscreen">
+	<div style="background-color: black; width: 100%; height: 100%; display: block;">
 
-		<video autoplay loop preload="auto" poster="https://my.mixtape.moe/jeznhn.png" id="volumedown" class="vid">
+		<video autoplay loop preload="auto" poster="https://my.mixtape.moe/jeznhn.png" id="volumedown" class="vid top">
 
 			<source src="https://my.mixtape.moe/zrnlos.mp4" type="video/mp4">
 			"It's 2017 what are you doing"
@@ -44,11 +44,11 @@
 
 	<div id="margin1"></div>
 	
-	<img src="https://my.mixtape.moe/ywvmmq.png" id="avi" alt="Avi" class="" />
+	<img src="https://my.mixtape.moe/ywvmmq.png" id="avi" alt="Avi" class="top" />
 
 	<div id="margin2"></div>
 	
-	<div id="name">
+	<div id="name" class="top">
 		
 		<p id="name2">MYNAMEISARANDO</p>
 
@@ -56,7 +56,7 @@
 
 		<p class="hello">HELLO, I'M ARANDO</p>
 		<p class="hello">PROBABLY THE MOST UNFUNNY GUY ON THE INTERNET</p>
-		<p class="hello">IT STUDENT | UK | BAD CODER</p>
+		<p class="hello">IT STUDENT | UK | CONTENT CREATER | BAD CODER</p>
 
 		<ul id="fix">
 		
@@ -96,7 +96,7 @@
 			
 		</ul>
 
-		<div id="goals">
+		<div id="goals" class="top">
 
 			 <p style="text-align: left;">
 
@@ -142,7 +142,7 @@
 
 		</div>
 
-		<div id="crypto">
+		<div id="crypto" class="top">
 
 			<p style="font-size: 10px;"><strong>BTC:</strong> 13qxfueaZ6kmW2wzGJLX3Cys2TcKBaH3Hi</p>
 			<p style="font-size: 10px;"><strong>LTC:</strong> LV4LhQu5aQBbbvN5NeiSsqAfaPnwqj4X4e</p>
@@ -173,7 +173,33 @@
 		
 	</div>
 
-	<p style="position: absolute; right: 1%; top: 97%;">&#169; | MyNameIsArando</p>
+	<p style="position: absolute; right: 1%; top: 97%;" class="top">&#169; | MyNameIsArando</p>
+
+	<div class="pagetwo">
+
+		<br />
+		<p id="name2" style="font-size: 40px; padding-top: 0px;">OTHER PROJECTS</p>
+		<hr />
+
+		<div class="pagetwo-items grow" style="background-image: url(https://my.mixtape.moe/prqdwh.png);">
+
+			<a href="http://arando.club/Track44-Dev-Site/" style="color: white;" target="blank"><p style="font-size: 18px; vertical-align: middle; line-height: 150px;">T44 DEV SITE</p></a>
+
+		</div>
+
+		<div class="pagetwo-items grow" style="background-image: url(https://my.mixtape.moe/txraol.jpg);">
+
+			<a href="http://arando.club/ltc/" style="color: white;" target="blank"><p style="color: red; font-size: 30px; vertical-align: middle; line-height: 150px;">MINER</p></a>
+
+		</div>
+
+		<div class="pagetwo-items grow" style="background-image: url(https://my.mixtape.moe/dhnknp.gif);">
+
+			<a href="http://arando.club/discord.cock/" style="color: white;" target="blank"><p style="font-size: 16px; vertical-align: middle; line-height: 150px;">DISCORD.COCK</p></a>
+
+		</div>
+
+	</div>
 
 	<script>
 		
@@ -228,6 +254,10 @@
 				$("#goals").slideToggle("slow");
 			});
 		});
+
+		$(window).scroll(function(){
+            $(".top").css("opacity", 1 - $(window).scrollTop() / 450);
+        });
 
 	</script>
 

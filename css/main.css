@@ -45,11 +45,24 @@ video.vid {
 	transition: all .2s ease-in-out;
 }
 .grow:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .hello {
 	letter-spacing: 5px;
 	margin: 0;
+}
+.pagetwo {
+	height: 300px;
+	background-color: #101010;
+	text-align: center;
+}
+.pagetwo-items {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	background-size: cover;
+	margin: 10px 15px;
+	border-radius: 2%;
 }
 .shill {
 	width: 35px;
@@ -94,12 +107,12 @@ video.vid {
 	margin-top: 50px;
 }
 #name {
-	position: absolute;
 	font-size: 50px;
 	text-align: center;
 	width: 100%;
 	text-shadow: 2px 2px 4px #000000;
 	letter-spacing: 0px;
+	padding-bottom: 18%;
 }
 #name2 {
 	top: 26%;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<title>OY VEY!</title>
+
+<head>
+	<!-- Website & Images hosted by Github. BG Video & Images hosted by mixtape.moe | HTML/CSS/JS hosted on zweis VPS thanks lad -->
+	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Coded from scratch using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/pace.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<script src="js/script.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta property="title" content="MyNameIsArando">
+	<meta name="description" content="A little website I coded in my spare hours. Links to my profiles and various other places.">
+	<meta name="author" content="MyNameIsArando">
+	<meta charset='utf-8'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: black;" id="image">
+
+	<h1 id="text" style="margin-top: 20%" class="blink">THE GOYIM KNOW!</h1>
+	<h1 id="text" class="blink">SHUT IT DOWN!</h1>
+
+	<br />
+	<br />
+	<br />
+
+
+	<img src="oyvey.jpg" width=250px style="display: block; margin: 0 auto;" id="rotator"/>
+
+
+	<audio autoplay loop>
+
+		<source src="https://my.mixtape.moe/pivtsk.mp3" type="audio/mpeg">
+
+	</audio>
+
+	<!-- OG BG MUSIC LINK: https://www.youtube.com/watch?v=jk1kX-Tdi1Y -->
+
+	<script>
+	
+	const show = [
+        "jew.jpg",
+        "nojew.jpg",
+        ]
+
+    const node = document.getElementById("image");
+
+    const cycleImages = (images, container, step) => {
+        images.forEach((image, index) => (
+        setTimeout(() => {
+            container.style.backgroundImage = `url(${image})`  
+        }, step * (index + 1))
+    ))
+    setTimeout(() => cycleImages(images, container, step), step * images.length)
+    }
+
+    cycleImages(show, node, 300)
+	
+	</script>
+
+</body>
+</html>

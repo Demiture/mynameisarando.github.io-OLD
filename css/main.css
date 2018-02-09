@@ -164,42 +164,41 @@ video.vid {
 /* Square Fix */
 @media screen and (max-width: 1700px) {
 	#square {
-		width: 42%;
+		width: 49%;
 	}
 	#colours {
-		width: 6%;
+		width: 7%;
 	}
 }
 @media screen and (max-width: 1300px) {
 	#square {
-		width: 52%;
+		width: 59%;
 	}
 	#colours {
-		width: 7.42857142857%;
+		width: 8.42857142857%;
 	}
 }
 @media screen and (max-width: 910px) {
 	#square {
-		width: 69%;
+		width: 76%;
 	}
 	#colours {
-		width: 9.85714285714%;
+		width: 10.8571428571%;
 	}
 }
 @media screen and (max-width: 650px) {
 	#square {
-		width: 89%;
+		width: 95%;
 	}
 	#colours {
-		width: 12.7142857143%;
+		width: 13.5714285714%;
 	}
 }
-
 
 /*Mobile Machine*/
 @media screen and (max-width: 880px) {
 	#name2 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	.shill {
 		width: 30px;
@@ -212,7 +211,7 @@ video.vid {
 }
 @media screen and (max-width: 500px) {
 	#name2 {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	.hello {
 		font-size: 9px;

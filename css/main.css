@@ -208,6 +208,12 @@ video.vid {
 		letter-spacing: 5px;
 		margin: 0;
 	}
+	#square {
+		width: 95%;
+	}
+	#colours {
+		width: 13.5714285714%;
+	}
 }
 @media screen and (max-width: 500px) {
 	#name2 {

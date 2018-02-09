@@ -232,17 +232,21 @@ video.vid {
 		font-size: 9px;
 	}
 }
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 736px) {
 	#name2 {
-		font-size: 45px;
+		font-size: 34px;
 	}
 	#contact {
 		font-size: 8px;
 	}
+	.shill {
+		width: 20px;
+		height: 20px;
+	}
 }
 @media screen and (max-height: 600px) {
 	#name2 {
-		font-size: 30px;
+		font-size: 32px;
 	}
 	.shill {
 		width: 20px;

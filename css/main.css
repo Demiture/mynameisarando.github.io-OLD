@@ -75,11 +75,10 @@ video.vid {
 
 /* ID's */
 #avi {
-	width: 160px;
-	border: 1px solid white;
+	width: 170px;
 	border-radius: 50%;	
 	z-index: 1;
-	margin: 0 auto;
+	margin: auto;
 	display: block;
 }
 #colours {

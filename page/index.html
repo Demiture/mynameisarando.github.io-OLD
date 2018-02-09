@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<title>黒</title>
+
+<head>
+	<!-- Website & Images hosted by Github. BG Video hosted by doko.moe -->
+	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
+	<!-- Contact Email: tylercrowhurst123@gmail.com -->
+	<!-- Coded from scratch using VSCode | Tested using Firefox -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/pace.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
+	<script src="js/script.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta property="title" content="MyNameIsArando">
+	<meta name="description" content="Start Page">
+	<meta name="author" content="MyNameIsArando">
+	<meta charset='utf-8'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: #191919; background-image: url(https://my.mixtape.moe/ckmwie.jpg);">
+
+	<div style="display: block; margin: 0 auto; text-align: center;">
+		<div class="square">
+			<p class="text-header">Media</p>
+			<hr class="line" />
+			<div id="space"></div>
+			<a href="https://www.youtube.com/"><div class="item" style="background-color: #444444;"><p class="text-links">YouTube</p></div></a>
+			<a href="https://www.twitch.tv/"><div class="item" style="background-color: #7d4444;"><p class="text-links">Twitch</p></div></a><br />
+			<a href="https://soundcloud.com/"><div class="item" style="background-color: #3e5b42;"><p class="text-links">Soundcloud</p></a></div>
+			<a href="https://app.plex.tv/desktop"><div class="item" style="background-color: #809f8a;"><p class="text-links">Plex</p></div><br /></a>
+		</div>
+
+		<div class="square">
+			<p class="text-header">4chan</p>
+			<hr class="line" />
+			<div id="space"></div>
+			<a href="http://boards.4chan.org/g/"><div class="item" style="background-color: #444444;"><p class="text-links">/g/</p></div></a>
+			<a href="http://boards.4chan.org/a/"><div class="item" style="background-color: #7d4444;"><p class="text-links">/a/</p></div></a><br />
+			<a href="http://boards.4chan.org/t/"><div class="item" style="background-color: #3e5b42;"><p class="text-links">/t/</p></div></a>
+			<a href="http://boards.4chan.org/b/"><div class="item" style="background-color: #809f8a;"><p class="text-links">/b/</p></div></a><br />
+		</div>
+
+		<div class="square">
+			<p class="text-header">Social</p>
+			<hr class="line" />
+			<div id="space"></div>
+			<a href="https://tweetdeck.twitter.com/"><div class="item" style="background-color: #444444;"><p class="text-links">Twitter</p></div></a>
+			<a href="https://discordapp.com/channels/@me"><div class="item" style="background-color: #7d4444;"><p class="text-links">Discord</p></div></a><br />
+			<a href="https://myanimelist.net/profile/MyNameIsArando"><div class="item" style="background-color: #3e5b42;"><p class="text-links">MAL</p></div></a>
+			<a href="http://steamcommunity.com/id/MyNameIsArando"><div class="item" style="background-color: #809f8a;"><p class="text-links">Steam</p></div></a><br />
+		</div>
+	</div>
+
+	<br />
+
+	<p id="time_span" class="time"></p>
+
+</body>
+
+	<script>
+		
+		// Time & Date | big shoutout to zwei //
+		function updateTime(){
+    		var currentTime = new Date()
+			var hours = currentTime.getHours()
+			var minutes = currentTime.getMinutes()
+			var seconds = currentTime.getSeconds()
+				if (seconds < 10){
+					seconds = "0" + seconds
+				}
+				if (minutes < 10){
+					minutes = "0" + minutes
+				}
+				var t_str = hours + ":" + minutes + ":" + seconds;
+				if(hours > 11){
+					t_str += "";
+				} else {
+					t_str += "";
+				}
+				document.getElementById('time_span').innerHTML = t_str;
+			}
+			setInterval(updateTime, 1000);
+			
+		// Date //
+		function dateTime(){
+			var dt = new Date();
+			document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+		}
+		setInterval(dateTime, 1000);
+
+		$(document).ready(function(){
+			$("#btc").click(function(){
+				$("#crypto").slideToggle("slow");
+			});
+		});
+
+		$(window).scroll(function(){
+            $(".top").css("opacity", 1 - $(window).scrollTop() / 530);
+        });
+
+	</script>
+
+</body>
+</html>

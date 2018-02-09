@@ -1,0 +1,90 @@
+a:focus, a:hover {
+	color: transparent;
+}
+a {
+	text-decoration: none;
+	color: transparent;
+	text-shadow: 2px 2px 4px transparent;
+}
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	background-color: black;
+	padding: 2.5%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+button {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	
+}
+p {
+	font-family: 'Monda', sans-serif;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+}
+
+/* Classes */
+
+.item {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+	margin: 2px;
+}
+.item:hover {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+	margin: 2px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.line {
+	margin: 20px 5px;
+	border-top: 1px solid #000;
+}
+.square {
+	background-color: #fff;
+	padding: 25px 30px 25px 30px;
+	min-width: 25%;
+	max-width: 25%;
+	display: inline-block;
+	text-align: center;
+	margin: 25px;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+.text-links {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	height: 100px;
+	line-height: 100px;
+}
+.text-header {
+	text-align: center;
+	margin: 0;
+	font-size: 50px;
+	font-weight: lighter;
+	font-family: 'Libre Barcode 39 Extended Text', cursive;
+	color: #000;
+}
+.time {
+	font-family: 'Righteous', cursive;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 220px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+/* ID's */
+
+#space {
+	height: 0px;
+}

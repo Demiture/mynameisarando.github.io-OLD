@@ -90,6 +90,7 @@ video.vid {
 }
 #crypto {
 	display: none;
+	color: #000;
 }
 #datetime {
 	font-size: 14px;

@@ -22,30 +22,69 @@ button {
 	
 }
 hr {
-	margin: 0 32%;
+	margin: 2% 44% 1% 44%;
+	border-top: 2px solid #fff;
 }
 p {
-	font-family: 'Nanum Gothic Coding', monospace;
-	font-size: 18px;
+	font-family: 'VT323', monospace;
+	font-size: 1.4em;
 	color: white;
 	text-align: center;
 	text-shadow: 1px 1px #000;
+	margin: 0;
 }
-video {
-	opacity: 0.4;
+ul {
+	padding: 0;
 }
 
 /* Classes */
-
+.icons {
+	display: inline-block;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	margin: 0.3%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 /* ID */
 #avatar {
-	width: 400px;
-	height: 400px;
+	min-width: 10%;
+	min-height: 10%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
 	border: 1px solid #222222;
+	margin-top: 3%;
+}
+#content {
+	background-color: #101010;
+	padding: 1%;
+	margin: 1% 0;
+}
+#expand {
+	min-width: 2.5%;
+	max-width: 2.6%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+#icon-space {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 1%;
+}
+#mutetxt {
+	position: absolute;
+	left: 97%;
+	top: 96%;
+	cursor: pointer;
+}
+#name {
+	font-size: 5em;
+	font-family: 'VT323', monospace;
 }
 
 /* Animations */

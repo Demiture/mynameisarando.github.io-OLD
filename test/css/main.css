@@ -13,7 +13,7 @@ body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url("../test.jpg");
+	background-image: url("../test.png");
 	background-repeat: no-repeat;
 	background-size: fit;
 }
@@ -51,10 +51,8 @@ ul {
 
 /* ID */
 #avatar {
-	min-width: 10%;
-	min-height: 10%;
-	max-width: 10%;
-	max-height: 10%;
+	width: 10%;
+	height: 10%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;
@@ -66,6 +64,7 @@ ul {
 	padding: 1%;
 	margin: 1% 0;
 	display: none;
+	background-image: url("../img/content.png");
 }
 #expand {
 	min-width: 2.5%;
@@ -105,11 +104,11 @@ ul {
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-5px); }
+    100% { transform: translateY(-8px); }
 }
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-5px); }
+    100% { transform: translateY(-8px); }
 }
 #fade {
 	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera */
@@ -138,4 +137,78 @@ ul {
 	z-index: 9999;
 	background: url(../img/loader.gif) center no-repeat #fff;
 	background-color: #101010;
+}
+
+/* High/Low Res Screen Support */
+@media screen and (max-width: 3840px) {
+	.icons {
+		width: 230px;
+		height: 230px;
+	}
+	#name {
+		font-size: 12em;
+	}
+	p {
+		font-size: 3em;
+	}
+	body {
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 2560px) {
+	.icons {
+		width: 178px;
+		height: 178px;
+	}
+	#name {
+		font-size: 7em;
+	}
+	p {
+		font-size: 2.2em;
+	}
+	body {
+		background-size: fit;
+	}
+}
+@media screen and (max-width: 1920px) {
+	.icons {
+		width: 100px;
+		height: 100px;
+	}
+	#name {
+		font-size: 5em;
+	}
+	p {
+		font-size: 1.4em;
+	}
+	body {
+		background-size: fit;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.icons {
+		width: 80px;
+		height: 80px
+	}
+	#name {
+		font-size: 4em;
+	}
+	body {
+		background-size: fit;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.icons {
+		width: 75px;
+		height: 75px;
+	}
+	#name {
+		font-size: 3.2em;
+	}
+	p {
+		font-size: 1em;
+	}
+	body {
+		background-size: fit;
+	}
 }

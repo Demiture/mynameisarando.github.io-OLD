@@ -33,18 +33,18 @@
 	<hr />
 	<p id="name">ARANDO</p>
 	<div id="icon-space">
-		<div class="icons" style="background-image: url(img/twitter.png);"></div>
-		<div class="icons" style="background-image: url(img/yt.png);"></div>
+		<a href="https://twitter.com/mynameisarando"><div class="icons" style="background-image: url(img/twitter.png);"></div></a>
+		<a href="https://www.youtube.com/channel/UC8VBC2E522pBfreqZNgzr9g"><div class="icons" style="background-image: url(img/yt.png);"></div></a>
 		<br />
-		<div class="icons" style="background-image: url(img/github.png);"></div>
-		<div class="icons" style="background-image: url(img/mal.png);"></div>
+		<a href="https://github.com/MyNameIsArando"><div class="icons" style="background-image: url(img/github.png);"></div></a>
+		<a href="https://myanimelist.net/profile/mynameisarando"><div class="icons" style="background-image: url(img/mal.png);"></div></a>
 	</div>
 	<div id="content">
 		<p>Hello, I'm Arando</p>
 		<p>I'm a College student in the UK that's bad at coding and GFX design.</p>
 		<p>If you need to contact me, add MyNameIsArando#4810 on Discord or email me <a href="mailto:tylercrowhurst123@gmail.com" style="color: #909090">here.</a></p>
 		<br />
-		<a href="https://arando.club/old"><p style="color: red;">Legacy Site</p></a>
+		<a href="http://arando.club/old"><p style="color: red;">Legacy Site</p></a>
 		<a href="recommend.txt"><p style="color: green;">Recommendations</p></a>
 		<p style="color: cyan;">Music: Jinsang - First Luv</p>
 	</div>
@@ -54,7 +54,7 @@
 	</audio> 
 	<p onclick="muteBg()" id="mutetxt">Mute</p>
 	<script>
-	// Audio Volume //
+	// Audio Volume | Thanks Demi //
 	document.getElementById("volumedown").volume = 0.03;
 
 	function muteBg() {
@@ -64,6 +64,11 @@
 	function unmuteBg() {
 		document.getElementById("volumedown").volume = 0.03;
 	}
+	// jQuery Hide/Show Toggle //
+	$( "#expand" ).click(function() {
+	  $( "#content" ).slideToggle( "slow", function() {
+	  });
+	});
 	</script>
 </body>
 </html>

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <title>MyNameIsArando | Testing</title>
-
 <head>
 	<!-- Website & Images hosted by Github. -->
 	<!-- All copyrights belong to their respective owners. Please don't sue 👀 -->
@@ -18,7 +16,8 @@
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<script src="js/script.js"></script>
 	<script src="js/pace.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<meta property="title" content="MyNameIsArando">
 	<meta name="description" content="a test site">
 	<meta name="author" content="MyNameIsArando">
@@ -27,17 +26,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
 <body>
-	<div id="pace"></div>
+	<div class="se-pre-con"></div>
 	<img src="avi.png" id="avatar" />
 	<hr />
-	<p id="name">ARANDO</p>
+	<p id="name">MYNAMEISARANDO</p>
 	<div id="icon-space">
-		<a href="https://twitter.com/mynameisarando"><div class="icons" style="background-image: url(img/twitter.png);"></div></a>
-		<a href="https://www.youtube.com/channel/UC8VBC2E522pBfreqZNgzr9g"><div class="icons" style="background-image: url(img/yt.png);"></div></a>
+		<a href="https://twitter.com/mynameisarando"><div class="icons grow" style="background-image: url(img/twitter.png);"></div></a>
+		<a href="https://www.youtube.com/channel/UC8VBC2E522pBfreqZNgzr9g"><div class="icons grow" style="background-image: url(img/yt.png);"></div></a>
 		<br />
-		<a href="https://github.com/MyNameIsArando"><div class="icons" style="background-image: url(img/github.png);"></div></a>
-		<a href="https://myanimelist.net/profile/mynameisarando"><div class="icons" style="background-image: url(img/mal.png);"></div></a>
+		<a href="https://github.com/MyNameIsArando"><div class="icons grow" style="background-image: url(img/github.png);"></div></a>
+		<a href="https://myanimelist.net/profile/mynameisarando"><div class="icons grow" style="background-image: url(img/mal.png);"></div></a>
 	</div>
 	<div id="content">
 		<p>Hello, I'm Arando</p>

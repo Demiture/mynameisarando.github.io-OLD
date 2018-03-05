@@ -119,7 +119,7 @@ ul {
 	animation: fadein 4s;
 }
 
-//* Loader *//
+/* Loader */
 .no-js #loader {
 	display: none;
 }

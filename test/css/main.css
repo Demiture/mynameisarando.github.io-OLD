@@ -52,9 +52,9 @@ ul {
 /* ID */
 #avatar {
 	min-width: 10%;
-	min-height: 20%;
-	max-width: 11%;
-	max-height: 11%;
+	min-height: 10%;
+	max-width: 10%;
+	max-height: 10%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 50%;

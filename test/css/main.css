@@ -7,9 +7,12 @@ a {
 	text-shadow: 2px 2px 4px transparent;
 }
 body {
-	margin: 0px;
+	margin: 0;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	background-color: black;
+	background-color: #101010;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 button {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -29,6 +32,14 @@ video {
 }
 
 /* Classes */
+
+
+/* ID */
+#avatar {
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+}
 
 /* Animations */
 #fade {

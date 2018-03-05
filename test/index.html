@@ -8,14 +8,12 @@
 	<!-- Coded from scratch using VSCode | Tested using Firefox -->
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/pace.css" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<script src="js/script.js"></script>
-	<script src="js/pace.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<meta property="title" content="MyNameIsArando">
@@ -32,50 +30,16 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
-
+	
 <body>
 	<div class="se-pre-con"></div>
-	<img src="avi.png" id="avatar" />
-	<hr />
-	<p id="name">MYNAMEISARANDO</p>
-	<div id="icon-space">
-		<a href="https://twitter.com/mynameisarando"><div class="icons grow" style="background-image: url(img/twitter.png);"></div></a>
-		<a href="https://www.youtube.com/channel/UC8VBC2E522pBfreqZNgzr9g"><div class="icons grow" style="background-image: url(img/yt.png);"></div></a>
-		<br />
-		<a href="https://github.com/MyNameIsArando"><div class="icons grow" style="background-image: url(img/github.png);"></div></a>
-		<a href="https://myanimelist.net/profile/mynameisarando"><div class="icons grow" style="background-image: url(img/mal.png);"></div></a>
-	</div>
-	<div id="content">
-		<p>Hello, I'm Arando</p>
-		<p>I'm a College student in the UK that's bad at coding and GFX design.</p>
-		<p>If you need to contact me, add MyNameIsArando#4810 on Discord or email me <a href="mailto:tylercrowhurst123@gmail.com" style="color: #909090">here.</a></p>
-		<br />
-		<a href="http://arando.club/old"><p style="color: red;">Legacy Site</p></a>
-		<a href="recommend.txt" target="blank"><p style="color: green;">Recommendations</p></a>
-		<p style="color: cyan;">Music: Jinsang - First Luv</p>
-	</div>
-	<img src="img/arrow.png" id="expand" class="crossRotate" />
+	<p style="opacity: 1;">Woah, looks like I'm not testing anything</p>
 	<audio autoplay loop id="volumedown">
 		<source src="audio.mp3" type="audio/mpeg">
 	</audio> 
-	<p onclick="muteBg()" id="mutetxt">Mute</p>
-	<a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=65152403"><p id="sauce">BG Source</p></a>
 	<script>
-	// Audio Volume | Thanks Demi //
-	document.getElementById("volumedown").volume = 0.03;
-
-	function muteBg() {
-		document.getElementById("volumedown").volume = 0;
-	}
-
-	function unmuteBg() {
+		// Audio Volume | Thanks Demi //
 		document.getElementById("volumedown").volume = 0.03;
-	}
-	// jQuery Hide/Show Toggle //
-	$( "#expand" ).click(function() {
-	  $( "#content" ).slideToggle( "slow", function() {
-	  });
-	});
 	</script>
 </body>
 </html>

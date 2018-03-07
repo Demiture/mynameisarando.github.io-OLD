@@ -173,12 +173,13 @@ ul {
 }
 
 /* Member Bios */
-#arando-cont, #brando-cont, #demi-cont, #dizi-cont, #embargo-cont, #worl-cont, #zwei-cont {
+#bio-cont {
 	display: none;
 	text-align: center;
 	border-top: 10px solid #333;
 	background-color: #060606;
 }
+/* The code below isn't needed anymore.
 #arando-cont, #demi-cont, #embargo-cont, #zwei-cont {
 	background-image: url("../img/back.png");
 	padding: 10px;
@@ -189,6 +190,7 @@ ul {
 #zwei-cont {
 	border-bottom: 10px solid #333;
 }
+*/
 .links {
 	color: #808080;
 	font-family: 'Cutive Mono', monospace;

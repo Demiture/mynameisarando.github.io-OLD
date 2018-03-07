@@ -73,56 +73,10 @@
                 <img src="img/avi/worluvus.png" class="the-team grow" id="worl" />
                 <img src="img/avi/zwei.png" class="the-team grow" id="zwei" />
             </ul>
-            <div id="arando-cont">
-                <p class="name centertext">MyNameIsArando</p>
+            <div id="bio-cont">
+                <p class="name centertext" id="bio-name"></p>
                 <hr id="team-line" />
-                <p class="centertext">The guy coding this very site, I like to pretend I know how to code and use a computer.</p>
-                <p class="centertext">Check out my website <a href="http://arando.club/home" target="blank" class="links">here.</a></p>
-                <div class="spacing"></div>
-            </div>
-            <div id="brando-cont">
-                <p class="name centertext">Brando (Potato)</p>
-                <hr id="team-line" />
-                <p class="centertext">A man with some serious lung problems, fuck this mans wheezing.</p>
-                <p class="centertext">Contributes by abusing perms and giving jokes to mooch off.</p>
-                <div class="spacing"></div>
-            </div>
-            <div id="demi-cont">
-                <p class="name centertext">Demiture</p>
-                <hr id="team-line" />
-                <p class="centertext">Sniffs paint, sleeps during day and skips classes. The full package.</p>
-                <p class="centertext">Also likes to pretend he knows how to code, like all webdevs.</p>
-                <p class="centertext"><a href="http://demiture.moe/" target="blank" class="links">Website</a> | Hello Ethan | <a href="https://github.com/demiture" target="blank" class="links">Github</a></p>
-                <div class="spacing"></div>
-            </div>
-            <div id="dizi-cont">
-                <p class="name centertext">DIZIACE</p>
-                <hr id="team-line" />
-                <p class="centertext">All round legend, master of photoshop and makes some fire mixtapes.</p>
-                <p class="centertext">He's also Donkey Kong irl, what more could you ask for?</p>
-                <div class="spacing"></div>
-            </div>
-            <div id="embargo-cont">
-                <p class="name centertext">Embarrassing (Embargo)</p>
-                <hr id="team-line" />
-                <p class="centertext">This man knows every word in the English dictionary and is scary good at Bomb Party.</p>
-                <p class="centertext">He does this while also speaking 1200 other languages, go figure.</p>
-                <div class="spacing"></div>
-            </div>
-            <div id="worl-cont">
-                <p class="name centertext">Worluvus</p>
-                <hr id="team-line" />
-                <p class="centertext">If there was a depression award, this man would almost definetely come first place.</p>
-                <p class="centertext">Cake also doxxed him, making his life a complete misery.</p>
-                <div class="spacing"></div>
-            </div>
-            <div id="zwei-cont">
-                <p class="name centertext">zwei</p>
-                <hr id="team-line" />
-                <p class="centertext">This man is a Christian Gamer and is a literal god at Rainbow Six Siege.</p>
-                <p class="centertext">He's also probably the only guy in the team that can actually code.</p>
-                <p class="centertext">Nice internet btw</p>
-                <p class="centertext"><a href="http://sjdh.us/" target="blank" class="links">Website</a> | <a href="https://github.com/soujitendou" target="blank" class="links">Github</a></p>
+                <p class="centertext" id="bio-p"></p>
                 <div class="spacing"></div>
             </div>
             <p class="centertext" style="margin-top: 15px;">Click on each members avatar to learn more about them.</p>
@@ -155,46 +109,141 @@
             <a href=""><button class="butt-red">N/A</button></a>
         </div>
     </div>
+    <script>
+            $("#arando").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                arando();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "MyNameIsArando") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(arando, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+
+        $("#brando").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                brando();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "Brando (Potato)") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(brando, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+        
+        $("#demi").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                demi();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "Demiture") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(demi, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+        
+        $("#dizi").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                dizi();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "DIZIACE") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(dizi, 400);
+                $("#bio-cont").fadeIn("slow");
+
+            }
+        });
+        
+        $("#embargo").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                embargo();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "Embarrassing (Embargo)") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(embargo, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+        
+        $("#worl").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                worl();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "Worluvus") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(worl, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+        
+        $("#zwei").click(function(){
+            if ($("#bio-cont").is(":hidden")) {
+                zwei();
+                $("#bio-cont").slideToggle("slow");
+            } else if (document.getElementById("bio-name").innerHTML == "zwei") {
+                $("#bio-cont").slideToggle("slow");
+                setTimeout(clearbio, 500);
+            } else {
+                $("#bio-cont").fadeOut();
+                setTimeout(zwei, 400);
+                $("#bio-cont").fadeIn("slow");
+            }
+        });
+
+        function arando() {
+            document.getElementById("bio-name").innerHTML = "MyNameIsArando";
+            document.getElementById("bio-p").innerHTML = "The guy coding this very site, I like to pretend I know how to code and use a computer. <br /> Check out my website <a href='http://arando.club/home' target='blank' class='links'>here</a>.";
+        }
+        function brando() {
+            document.getElementById("bio-name").innerHTML = "Brando (Potato)";
+            document.getElementById("bio-p").innerHTML = "A man with some serious lung problems, fuck this mans wheezing. <br /> Contributes by abusing perms and giving jokes to mooch off.";
+        }
+        function demi() {
+            document.getElementById("bio-name").innerHTML = "Demiture";
+            document.getElementById("bio-p").innerHTML = "Sniffs paint, sleeps during day and skips classes. The full package. <br /> Also likes to pretend he knows how to code, like all webdevs. <br /> <a href='http://demiture.moe/' target='blank' class='links'>Website</a> | Hello Ethan | <a href='https://github.com/demiture' target='blank' class='links'>Github</a>";
+        }
+        function dizi() {
+            document.getElementById("bio-name").innerHTML = "DIZIACE";
+            document.getElementById("bio-p").innerHTML = "All round legend, master of photoshop and makes some fire mixtapes. <br /> He's also Donkey Kong irl, what more could you ask for?";
+        }
+        function embargo() {
+            document.getElementById("bio-name").innerHTML = "Embarrassing (Embargo)";
+            document.getElementById("bio-p").innerHTML = "This man knows every word in the English dictionary and is scary good at Bomb Party. <br /> He does this while also speaking 1200 other languages, go figure.";
+        }
+        function worl() {
+            document.getElementById("bio-name").innerHTML = "Worluvus";
+            document.getElementById("bio-p").innerHTML = "If there was a depression award, this man would almost definetely come first place. <br /> Cake also doxxed him, making his life a complete misery.";
+        }
+        function zwei() {
+            document.getElementById("bio-name").innerHTML = "zwei";
+            document.getElementById("bio-p").innerHTML = "This man is a Christian Gamer and is a literal god at Rainbow Six Siege. <br /> He's also probably the only guy in the team that can actually code. <br /> Nice internet btw <br /> <a href='http://sjdh.us/' target='blank' class='links'>Website</a> | <a href='https://github.com/soujitendou' target='blank' class='links'>Github</a>";
+        }
+        function clearbio() {
+            document.getElementById("bio-name").innerHTML = "";
+            document.getElementById("bio-p").innerHTML = "";
+        }
+        </script>
     <footer id="foot">
         <p id="foot-text">Track44</p>
     </footer>
-    <script>
-        // jQuery Hide/Show Toggle //
-        $(document).ready(function(){
-			$("#arando").click(function(){
-				$("#arando-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#brando").click(function(){
-				$("#brando-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#demi").click(function(){
-				$("#demi-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#dizi").click(function(){
-				$("#dizi-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#embargo").click(function(){
-				$("#embargo-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#worl").click(function(){
-				$("#worl-cont").slideToggle("slow");
-			});
-		});
-        $(document).ready(function(){
-			$("#zwei").click(function(){
-				$("#zwei-cont").slideToggle("slow");
-			});
-		});
-    </script>
 </body>
 </html>
